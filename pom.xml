@@ -23,17 +23,13 @@
     </dependency>
   </dependencies>
  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifestFile>src/main/resources/META-INF/Manifest.mf</manifestFile>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build> 
+  <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-jar-plugin</artifactId>
+	<configuration>
+	  <archive>
+		<mainClass>com.mysmsmt.games.gui.TenPinScoring</mainClass>
+	  </archive>
+	</configuration>
+  </plugin>
  </project>
