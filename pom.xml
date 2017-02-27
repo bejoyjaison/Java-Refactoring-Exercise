@@ -22,4 +22,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-</project>
+ 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestFile>src/main/resources/META-INF/Manifest.mf</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build> 
+ </project>
